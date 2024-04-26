@@ -14,7 +14,6 @@ end
 	
 -- write to the open file
 local function writeFileLine(file_handle, str)
-	print(file_id)
 	local f = file_handle:write(str, "\n")
 end
 

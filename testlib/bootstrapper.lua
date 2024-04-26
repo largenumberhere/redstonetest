@@ -3,8 +3,9 @@ local function bootstrap2(function_name)
 	local results = {pcall(function_name)}
 	if results ~= nil then
 		if #results > 1 then
+			print("error:")
 			for i,v in pairs(results) do
-				print(v)
+				print("  "..tostring(v))
 			end
 		end
 	end
