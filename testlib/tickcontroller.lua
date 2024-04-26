@@ -28,6 +28,7 @@ end
 -- todo: add assertions to all commands made to ensure they can't fail silently
 
 local function stepRedstoneTick()
+	-- suprisingly, I have more reliable results when these are called repeatedly instead of passing in a number
 	commands.native.exec("/tick step")
 	commands.native.exec("/tick step")
 
@@ -43,6 +44,8 @@ end
 local function stepRedstoneTicks(count)
 	assertTickCommandPresent()
 	
+	assert(type(count) == "number")
+	-- commands.native.exec("/tick step "..count)
 	
 	for i=1, count, 1 do
 		stepRedstoneTick()

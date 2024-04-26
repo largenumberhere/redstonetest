@@ -208,6 +208,12 @@ function main()
 		
 			print("OK")
 	end
+	
+	-- reset everything
+	testlib.clearPins(input_pins, output_pins)
+	testlib.stepRedstoneTicks(10)	
+	
+	commands.say("or16test finished")
 end
 
 local testlib = require("testlib")
