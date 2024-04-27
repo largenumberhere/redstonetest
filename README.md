@@ -13,7 +13,7 @@ See `or16test.lua` for an example.
 	- running `mkdir a` on the computer (this step is important).
 	- going to your world folder
 	- inside the `computercraft/computer` folder, there should be a folder (probably called `0`) which contains the `a` folder. Go into it
-	- clone this repository into the folder, or download [the zip folder](https://github.com/largenumberhere/refs/heads/main.zip) of it and extract it into the folder
+	- clone this repository into the folder, or download [the zip folder](https://github.com/largenumberhere/redstonetest/archive/refs/heads/main.zip) of it and extract it into the folder
 	- verify that it worked on the command computer by using `cd` to get to the redstonetestfolder and running `./select_inputs`. Quit the program as directed by the message.
 5. Place `redstone integrator`s in the world (from the plethora mod)
 6. Join the redstone integrators to the computer with `Writed Modem`s and `Networking Cable`s
