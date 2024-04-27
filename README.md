@@ -1,7 +1,11 @@
 # Redstone test
-A library for testring Minecraft redstone logic's correctness with the help of cc:tweaked and other mods in a creative world.
+A library for testring Minecraft redstone logic's correctness with the help of `cc:tweaked` and other mods in a creative world.
+This is intended for technical peple who want to unit test their redstone creations with a simple but powerful API written in a general purpose programming language (Minecraft commands and levers be damned!).
 
-## Usage
+## Library Usage
+See `or16test.lua` for an example.
+
+## Setup
 1. Create a modpack with the bellow requirements fulfilled
 2. Make a creative world with cheats enabled
 3. Spawn a command computer in the game with the command `/give @a computercraft:computer_command`, and place it down. 
@@ -17,7 +21,7 @@ A library for testring Minecraft redstone logic's correctness with the help of c
 8. Create a test script, `or16test.lua` is included as an example. It is important that the `libredstonetest` folder is in the same folder as your test script.
 9. Run the program. Please contact me if you experience bugs or have any other difficultly, I intend to update this readme with detail when I receive questions. 
 
-## Requirements:
+## Game Modification Requirements:
 This library assumes specific set of mods. The following are all the modifications I used **and all thier dependencies**. If you are inexpereinced, I suggest using multimc to manage modded minecraft instances to keep things organized and convienient. Hopefully, if you install all these the same way, it'll work without issue. Install fabric loader first. 
 - Minecraft 1.20.1
 - fabric loader 0.15.10
