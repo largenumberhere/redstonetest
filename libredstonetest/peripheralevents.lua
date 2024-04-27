@@ -1,4 +1,4 @@
-local writefile = require("testlib/writefile")
+local writefile = require("libredstonetest/writefile")
 
 
 -- wait for the specified event, or until the function fn_is_interrupt returns true 
@@ -39,7 +39,7 @@ end
 -- fn_is_interrupt is a function which takes a table with event details
 -- logs the name of each peripheral that is connected to the given file
 local function logPeripheralEvents(output_file_path, fn_is_interrupt)	
-	local file_handle = writefile.openFileWrite(output_file_path)	-- testlib	
+	local file_handle = writefile.openFileWrite(output_file_path)	-- libredstonetest	
 	while true do
 		local pin_name = waitForPeripheralEvent(fn_is_interrupt)
 		if pin_name == nil then

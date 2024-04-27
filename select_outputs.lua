@@ -1,8 +1,8 @@
 function main()
-	local testlib = require("testlib")
+	local testlib = require("libredstonetest")
 
 	print("connect all wired modems for circuit outputs in order")
-	print("press 'a' ket to exit")
+	print("press 'a' key to exit")
 
 	local file_name = "outputs.txt"
 
@@ -14,7 +14,7 @@ function main()
 
 end
 
-local testlib = require("testlib")
+local testlib = require("libredstonetest")
 testlib.bootstrap(main)
 
 

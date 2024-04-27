@@ -32,7 +32,7 @@ end
 local function createBootstrap(resource_removal_fn)		
 
 	-- call the function, logging all errors and then always releases files from openFileWrite. You don't need to call cleanup after this
-	-- warning: this changes the program context - for example, you will need to import testlib again inside your main function
+	-- warning: this changes the program context - for example, you will need to import libredstonetest again inside your main function
 	local function bootstrap(function_name)
 		-- run the program
 		pcall(bootstrap2, function_name)

@@ -1,10 +1,10 @@
 function main()
-	local testlib = require("testlib")
+	local testlib = require("libredstonetest")
 
 	testlib.freezeGame()
 	
-	local input_pins = testlib.loadInputPins("inputs16x2.txt")	-- include 32 pins numbered left-to-right, bottom to top
-	local output_pins = testlib.loadOutputPins("outputs16x1.txt")	-- number pins in same direction for the back but exclude the upper 16
+	local input_pins = testlib.loadInputPins("pinouts/inputs16x2.txt")	-- include 32 pins numbered left-to-right, bottom to top
+	local output_pins = testlib.loadOutputPins("pinouts/outputs16x1.txt")	-- number pins in same direction for the back but exclude the upper 16
 
 	local rs_ticks_allowed = 1
 
@@ -216,6 +216,6 @@ function main()
 	commands.say("or16test finished")
 end
 
-local testlib = require("testlib")
+local testlib = require("libredstonetest")
 
 testlib.bootstrap(main)

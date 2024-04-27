@@ -1,9 +1,9 @@
-local peripheralevents = require("testlib/peripheralevents")
-local keyboardutil = require("testlib/keyboardutil")
-local bootstrapper = require("testlib/bootstrapper")
+local peripheralevents = require("libredstonetest/peripheralevents")
+local keyboardutil = require("libredstonetest/keyboardutil")
+local bootstrapper = require("libredstonetest/bootstrapper")
 
-local pincontroller = require("testlib/pincontroller")
-local tickcontroller = require("testlib/tickcontroller")
+local pincontroller = require("libredstonetest/pincontroller")
+local tickcontroller = require("libredstonetest/tickcontroller")
 
 -- release all resources handled by this library
 	local function releaseResources()		
@@ -14,7 +14,7 @@ local tickcontroller = require("testlib/tickcontroller")
 -- api housekeeping
 	local bootstrap = bootstrapper.createBootstrap(releaseResources)
 
-	local testlib = {
+	local libredstonetest = {
 		isAKey = keyboardutil.isAKey,
 		logPeripheralEvents = peripheralevents.logPeripheralEvents,
 		bootstrap = bootstrap,
@@ -33,4 +33,4 @@ local tickcontroller = require("testlib/tickcontroller")
 		
 	}
 	
-return testlib
+return libredstonetest

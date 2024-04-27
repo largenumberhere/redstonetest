@@ -1,4 +1,4 @@
-local writefile = require("testlib/writefile") 
+local writefile = require("libredstonetest/writefile") 
 
 local function delay()
 	os.sleep(0.1)
